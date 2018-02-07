@@ -1,0 +1,24 @@
+section {
+  padding: 5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.input {
+display: flex;
+}
+
+.input__text {
+  padding-right: 2rem;
+
+}
+
+.input__money {
+flex-wrap: wrap;
+}
+
+.btn--green {
+  background: green;
+  border: none;
+
+}

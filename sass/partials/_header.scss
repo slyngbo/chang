@@ -1,5 +1,9 @@
-h1 {
-  color: white;
+.logo {
+  background: -webkit-linear-gradient(#0077aa, #19aaaa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   display: flex;
   justify-content: center;
+  font-family: $font-main;
+  font-size: 3rem;
 }

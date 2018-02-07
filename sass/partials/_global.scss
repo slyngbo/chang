@@ -1,9 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+// Main Font
+$font-main: 'Montserrat', sans-serif;
+
 body {
-
-  background: #0077aa;
-          background: -webkit-linear-gradient(left,#0077aa,#19aaaa);
-          background: -moz-linear-gradient(left,#0077aa,#19aaaa);
-          background: linear-gradient(left,#0077aa,#19aaaa);
-
-
+  font-family: $font-main;
 }
