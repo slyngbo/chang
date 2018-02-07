@@ -2,10 +2,12 @@ section {
   padding: 5rem;
   display: flex;
   justify-content: center;
+  display: grid;
 }
 
 .input {
 display: flex;
+align-self: center;
 }
 
 .input__text {
