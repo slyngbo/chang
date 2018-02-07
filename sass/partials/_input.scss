@@ -1,13 +1,14 @@
 section {
-  padding: 5rem;
+  display: grid;
+  width: 100%;
+  grid-template-columns: 50% 25% 25%;
   display: flex;
   justify-content: center;
-  display: grid;
+  padding-top: 4rem;
 }
 
 .input {
-display: flex;
-align-self: center;
+  margin-top: 5rem;
 }
 
 .input__text {
@@ -16,11 +17,11 @@ align-self: center;
 }
 
 .input__money {
-flex-wrap: wrap;
+border-radius: 2rem;
+margin-right: 20px;
+
 }
 
 .btn--green {
-  background: green;
-  border: none;
-
+  border-radius: 2rem;
 }
