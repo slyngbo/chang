@@ -1,9 +1,21 @@
 .logo {
+    display: flex;
+    justify-content: center;
+    background: -webkit-linear-gradient(#0077aa, #19aaaa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: $font-main;
+    font-size: 3rem;
+}
+
+.logo-tag {
+  display: flex;
+  justify-content: center;
   background: -webkit-linear-gradient(#0077aa, #19aaaa);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  display: flex;
-  justify-content: center;
-  font-family: $font-main;
-  font-size: 3rem;
 }
+// header {
+//   display: flex;
+//   justify-content: center;
+// }
