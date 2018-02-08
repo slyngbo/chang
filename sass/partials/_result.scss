@@ -1,3 +1,22 @@
 .result {
-  
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 7rem;
+  margin: 4rem 0 2rem 0;
+
+  &__pic {
+  text-align: end;
+
+  }
+
+ &__text {
+   color: #19aaaa;
+   align-self: center;
+  text-align: start;
+ }
+
+ & img {
+   box-shadow: 3px 2px 5px 0px rgba(0,0,0,0.75);
+ }
+
 }
