@@ -1,6 +1,5 @@
-section {
+*:focus {outline:none};
 
-}
 
 .input {
   display: flex;
@@ -12,7 +11,6 @@ section {
   display: flex;
   justify-content: center;
   margin-top: 4rem;
-
 }
 
 .input__money {
@@ -30,4 +28,9 @@ margin-right: 2rem;
   color: white;
   background: #0077aa;
   box-shadow: 3px 2px 5px 0px rgba(0,0,0,0.75);
+
+}
+
+.input:focus {
+  outline: 0 !important;
 }
