@@ -1,15 +1,16 @@
 header {
+  font-family: $font-logo;
   text-align: center;
   background: -webkit-linear-gradient(#0077aa, #19aaaa);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
   h1 {
-    font-size: 4rem;
+    font-size: 3rem;
 
   }
 
   h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
