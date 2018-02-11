@@ -1,23 +1,15 @@
-.logo {
-    display: flex;
-    justify-content: center;
-    background: -webkit-linear-gradient(#0077aa, #19aaaa);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-family: $font-main;
-    font-size: 3rem;
-
-}
-
-
-.logo-tag {
-  display: flex;
-  justify-content: center;
+header {
+  text-align: center;
   background: -webkit-linear-gradient(#0077aa, #19aaaa);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+
+  h1 {
+    font-size: 4rem;
+
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
 }
-// header {
-//   display: flex;
-//   justify-content: center;
-// }

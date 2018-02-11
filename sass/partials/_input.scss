@@ -1,36 +1,33 @@
-*:focus {outline:none};
-
-
-.input {
-  display: flex;
-  justify-content: center;
-
-}
-
-.input__text {
-  display: flex;
-  justify-content: center;
-  margin-top: 4rem;
-}
-
-.input__money {
-border-radius: 2rem;
-width: 10rem;
-padding: 1rem;
-margin-right: 2rem;
-
+section {
+  display: grid;
+  grid-gap: 20px;
+  text-align: center;
+  margin-top: 5rem;
 }
 
 .btn--input {
-  width: 9rem;
-  border-radius: 2rem;
-  padding: 1rem;
-  color: white;
-  background: #0077aa;
-  box-shadow: 3px 2px 5px 0px rgba(0,0,0,0.75);
+  background-color: $dark;
+  color: $light;
+  padding: 0.6rem 1.3rem;
+  border: 0;
+  padding: 1.5rem;
+  box-shadow: $shadow;
 
 }
 
-.input:focus {
-  outline: 0 !important;
+.btn--input:hover {
+  background-color: $font-primary;
+  color: $light;
+  transition: all 500ms ease;
+    }
+
+
+.input__header {
+  color: $font-primary;
+}
+
+.input__money {
+  padding: 1.5rem;
+  border: 0;
+  box-shadow: $shadow;
 }

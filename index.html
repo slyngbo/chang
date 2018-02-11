@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge"> <!-- † -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Chang'a'later - Wep App</title>
 
     <link rel="stylesheet" href="css/main.css">
@@ -11,20 +11,20 @@
 
   <body>
 
+<div class="wrapper">
     <!-- Header starts here / logo name -->
 <header>
-  <h1 class="logo">Chang'a'later</h1>
-  <h2 class="logo-tag">A currency generator</h2>
-  <!-- <img class="logo" src="images/logo.png" alt=""> -->
+  <h1>Chang'a'later</h1>
+  <h2>A currency generator</h2>
 </header>
 <!-- Header end -->
 
 
 <!-- Section with input money and result of input -->
 <section>
-  <h2 class="input__text">How much money do you have?</h2>
+  <h2 class="input__header">How much money do you have?</h2>
   <div class="input">
-    <input class="input__money" type="number">
+    <input class="input__money" type="number" placeholder="DKK">
     <button class="btn--input">What can i get</button>
   </div>
 
@@ -40,11 +40,14 @@
 
 
 <!-- Footer start -->
-<footer class="footer">
-<p>Copyright 2018 - Chang'a'later </p>
+<footer>
+  <p>Made by Jeevith, Tomas & Marc</p>
+  <p>Copyright &copy; 2018 - Chang'a'later </p>
+  <p>A small description about the Webapp</p>
 </footer>
 <!-- Footer end -->
-
+</div>
+<!-- Wrapper end -->
 
   <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
   <script src="js/main.js">

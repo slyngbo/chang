@@ -1,13 +1,25 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
-// Main Font
+// Variables
 $font-main: 'Montserrat', sans-serif;
+$primary: #ddd;
+$dark: #333;
+$light: #fff;
+$shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+$bg-dark: #222;
+$font-primary: #0077aa;
+$shadow: 3px 2px 5px 0px rgba(0,0,0,0.35);
 
-body {
+html, body {
 font-family: $font-main;
-// background color
-background: #e6e9f0;
-background: -webkit-linear-gradient(top left,#e6e9f0,#eef1f5);
-background: -moz-linear-gradient(top left,#e6e9f0,#eef1f5);
-background: linear-gradient(top left,#e6e9f0,#eef1f5);
-height: 95vh;
+background: $bg-dark;
+padding: 2rem 3rem;
+height: 100%;
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrapper {
+  display: grid;
 }
