@@ -7,6 +7,7 @@
     <title>Chang'a'later - Wep App</title>
 
     <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js"></script>
   </head>
 
   <body>
@@ -24,18 +25,16 @@
 <section>
   <h2 class="input__header">How much money do you have?</h2>
   <div class="input">
-    <input class="input__money" type="number" placeholder="DKK">
-    <button id="clicked" class="btn--input">What can i get</button>
+    <input id="inputMoney" class="input__money" type="number" placeholder="DKK">
+    <button id="button" class="btn--input" onclick="press()">What can i get</button>
   </div>
-
-
 
   <div class="result">
   <div class="result__pic">
-  <img src="https://source.unsplash.com/user/erondu/250x250"></div>
-  <div class="result__text">
-    <h2>You can get!</h2>
-  <p>4 cheesburgers for 40 kr. </p></div>
+  <img id="img" src="https://source.unsplash.com/user/erondu/250x250"></div>
+  <div id="rslt" class="result__text">
+    <h2>Try it!</h2>
+  <p>It might be usefull, or not.</p></div>
   </div>
 </section>
 <!-- Section end -->
@@ -43,7 +42,7 @@
 
 <!-- Footer start -->
 <footer>
-  <p>Made by Jeevith, Tomas & Marc</p>
+  <p>Made by Jeevith, Tomas, Marc & Simon</p>
   <p>Copyright &copy; 2018 - Chang'a'later </p>
   <p>A small description about the Webapp</p>
 </footer>
@@ -52,8 +51,5 @@
 <!-- Wrapper end -->
 
   <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
-  <script src="js/main.js">
-
-  </script>
   </body>
 </html>
