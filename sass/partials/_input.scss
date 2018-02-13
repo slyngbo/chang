@@ -6,7 +6,7 @@ section {
 }
 
 .btn--input {
-  background-color: $dark;
+  background-color: $font-primary;
   color: $light;
   padding: 0.6rem 1.3rem;
   border: 0;
@@ -16,7 +16,7 @@ section {
 }
 
 .btn--input:hover {
-  background-color: $font-primary;
+  background-color: $dark;
   color: $light;
   transition: all 500ms ease;
     }

@@ -5,12 +5,18 @@ header {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
+
   h1 {
     font-size: 3rem;
-
   }
 
   h2 {
     font-size: 1.5rem;
+    letter-spacing: 2px;
   }
+}
+
+header:hover {
+  transform: rotateZ(-5deg);
+  transition:all 0.3s ease;
 }

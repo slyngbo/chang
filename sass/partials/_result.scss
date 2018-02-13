@@ -5,3 +5,7 @@
     box-shadow: $shadow;
   }
 }
+
+.result img:hover {
+  transform: scale(1.3);
+}
