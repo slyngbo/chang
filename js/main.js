@@ -125,9 +125,10 @@ const images = [{
 
 function press() {
   let moneyInput = document.getElementById('inputMoney').value;
-  let ranNum = Math.floor((Math.random() * images.length));
+  let ranNum = Math.round((Math.random() * images.length));
   let image = images[ranNum];
   let count = moneyInput / image.price;
+  count = count.toFixed(2);
   let sound = new Audio('audio/' + image.name + '.mp3');
   sound.play();
   document.getElementById('img').src = "images/" + image.name + image.extension;
