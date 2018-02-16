@@ -4,6 +4,7 @@ const images = [{
     price: 10,
     txt: "cheeseburgers",
     btnText: "Wanna try again?",
+    audioExtension: ".mp3",
   },
   {
     name: "gold",
@@ -11,6 +12,7 @@ const images = [{
     price: 30000,
     txt: "goldbars",
     btnText: "Wanna try again loser?",
+    audioExtension: ".mp3",
   },
   {
     name: "camel",
@@ -18,6 +20,7 @@ const images = [{
     price: 15000,
     txt: "camels",
     btnText: "how many camels for your daughter?",
+    audioExtension: ".mp3",
   },
   {
     name: "cocain",
@@ -25,6 +28,7 @@ const images = [{
     price: 1000,
     txt: "cocains",
     btnText: "Good shit, dont go",
+    audioExtension: ".mp3",
   },
   {
     name: "weed",
@@ -32,6 +36,7 @@ const images = [{
     price: 200,
     txt: "weeds",
     btnText: "1337",
+    audioExtension: ".mp3",
   },
   {
     name: "cat",
@@ -39,6 +44,7 @@ const images = [{
     price: 550,
     txt: "cats",
     btnText: "kitty want to play",
+    audioExtension: ".mp3",
   },
   {
     name: "chips",
@@ -46,7 +52,8 @@ const images = [{
     price: 20,
     txt: "chips",
     btnText: "Will you share?",
-    // missing sound
+    audioExtension: ".mp3",
+
   },
   {
     name: "bike",
@@ -54,15 +61,15 @@ const images = [{
     price: 4500,
     txt: "bikes",
     btnText: "You want to try again?",
-    // missing sound
+    audioExtension: ".wav",
   },
   {
     name: "cider",
     extension: ".jpg",
-    price: 550,
+    price: 15,
     txt: "ciders",
     btnText: "Dont bother, just try again",
-    // missing sound
+    audioExtension: ".mp3",
   },
   {
     name: "coffee",
@@ -70,7 +77,7 @@ const images = [{
     price: 23,
     txt: "coffees",
     btnText: "too hot, wanna try again?",
-    // missing sound
+    audioExtension: ".wav",
   },
   {
     name: "cola",
@@ -78,7 +85,7 @@ const images = [{
     price: 16,
     txt: "colas",
     btnText: "Enjoy it cold",
-    // missing sound
+    audioExtension: ".wav",
   },
   {
     name: "cucumber",
@@ -86,31 +93,31 @@ const images = [{
     price: 8,
     txt: "cucumbers",
     btnText: "ehem, Neeeeeext",
-    // missing sound
+    audioExtension: ".wav",
   },
   {
     name: "kebab",
     extension: ".jpg",
-    price: 23,
+    price: 45,
     txt: "kebabs",
     btnText: "delicous, are you sure wanna skip?",
-    // missing sound
+    audioExtension: ".mp3",
   },
   {
     name: "monster",
     extension: ".jpg",
-    price: 23,
+    price: 17,
     txt: "monsters",
-    btnText: "too hot, wanna try again?",
-    // missing sound
+    btnText: "Wanna try again?",
+    audioExtension: ".wav",
   },
   {
     name: "ticket",
     extension: ".png",
-    price: 23,
+    price: 775,
     txt: "tickets",
     btnText: "awesome, try again?",
-    // missing sound
+    audioExtension: ".wav",
   },
   {
     name: "tomatoes",
@@ -118,7 +125,7 @@ const images = [{
     price: 6,
     txt: "tomatoes",
     btnText: "Tomatoes? ugh, try again?",
-    // missing sound
+    audioExtension: ".wav",
   }
 ];
 
@@ -129,7 +136,7 @@ function press() {
   let image = images[ranNum];
   let count = moneyInput / image.price;
   count = count.toFixed(2);
-  let sound = new Audio('audio/' + image.name + '.mp3');
+  let sound = new Audio('audio/' + image.name + image.audioExtension);
   sound.play();
   document.getElementById('img').src = "images/" + image.name + image.extension;
   document.getElementById('rslt').innerHTML = "<h2>You can get!</h2> " + count + " " + image.txt + " for " + moneyInput + " kr.";
